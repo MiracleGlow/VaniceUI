@@ -1,17 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaniceUI - Dokumentasi</title>
+  <style>
+    :root {
+      --primary-lightblue: #add8e6;
+      --primary-purple: #800080;
+      --primary-white: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--primary-white);
+      color: var(--primary-purple);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary-lightblue);
+      padding: 20px;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header h1 {
+      color: var(--primary-purple);
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: var(--primary-purple);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      background: var(--primary-purple);
+      color: var(--primary-white);
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .btn-primary {
+      background: var(--primary-lightblue);
+      color: var(--primary-purple);
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover {
+      background: var(--primary-purple);
+      color: var(--primary-white);
+    }
+    section.docs {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section.docs h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    section.docs .doc-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .doc-card {
+      background: var(--primary-lightblue);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .doc-card:hover {
+      transform: translateY(-5px);
+    }
+    .doc-card h4 {
+      margin-bottom: 10px;
+      color: var(--primary-purple);
+    }
+    .doc-card p {
+      margin-bottom: 15px;
+      color: var(--primary-purple);
+    }
+    .doc-card a {
+      color: var(--primary-purple);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: var(--primary-purple);
+      color: var(--primary-white);
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: var(--primary-lightblue);
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div class="blue-v1 center">
-        This is a div with the blue-v1 class.
+  <header>
+    <div class="container">
+      <h1>VaniceUI</h1>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#docs">Dokumentasi</a>
+        <a href="#about">Tentang</a>
+      </nav>
     </div>
-    <div class="kotaknasi center hvr-red">
-        This is a div with the kotaknasi class.
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Selamat datang di VaniceUI</h2>
+    <p>VaniceUI adalah framework CSS ringan dan mudah digunakan untuk mempercepat pengembangan antarmuka yang responsif dan modern.</p>
+    <button class="btn-primary" id="btnStart">Mulai Dokumentasi</button>
+  </section>
+
+  <section id="docs" class="docs">
+    <h3>Dokumentasi VaniceUI</h3>
+    <div class="doc-cards">
+      <div class="doc-card">
+        <h4>Instalasi</h4>
+        <p>Cara cepat memasang VaniceUI ke dalam proyek Anda.</p>
+        <a href="#">Lihat selengkapnya</a>
+      </div>
+      <div class="doc-card">
+        <h4>Komponen</h4>
+        <p>Galeri komponen siap pakai untuk berbagai kebutuhan antarmuka.</p>
+        <a href="#">Lihat selengkapnya</a>
+      </div>
+      <div class="doc-card">
+        <h4>Grid System</h4>
+        <p>Tips dan trik menggunakan sistem grid responsif VaniceUI.</p>
+        <a href="#">Lihat selengkapnya</a>
+      </div>
+      <div class="doc-card">
+        <h4>Tema Warna</h4>
+        <p>Pelajari dan temukan tema warna unik yang disediakan VaniceUI.</p>
+        <a href="#">Lihat selengkapnya</a>
+      </div>
     </div>
+  </section>
+
+  <section id="about" class="docs">
+    <h3>Tentang Pembuat</h3>
+    <div class="doc-cards">
+      <div class="doc-card">
+        <h1>MiracleGlow</h1>
+        <p>Pengembang</p>
+        <a href="https://github.com/MiracleGlow" target="_blank">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VaniceUI oleh <a href="https://github.com/MiracleGlow" target="_blank">MiracleGlow</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('btnStart').addEventListener('click', function() {
+      document.getElementById('docs').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
